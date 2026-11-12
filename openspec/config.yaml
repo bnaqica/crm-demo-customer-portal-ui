@@ -1,0 +1,12 @@
+schema: spec-driven
+
+context: |
+  React 19 + TypeScript + Vite single-page app, tested with Vitest, React Testing Library and Playwright.
+  Login is OIDC Authorization Code + PKCE against one Keycloak realm; the UI hides what the user can't do but never authorizes.
+  Claude never commits, pushes or merges in this repository. The developer reviews and commits every change.
+
+operations:
+  apply:
+    guidance:
+      - For every task, invoke the superpowers:test-driven-development skill before writing code, and write the failing test first.
+      - Skip any commit step, and never delete existing code to satisfy TDD. Nothing is committed, so deleted work can't be recovered.
